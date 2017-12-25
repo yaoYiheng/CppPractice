@@ -7,6 +7,9 @@
 //
 
 #include <iostream>
+
+//C++引入命名空间, 可以更好的控制识别符的作用域
+using namespace std;
 /*
      在C++中，数据的类型也可以通过参数来传递，在函数定义时可以不指明具体的数据类型，当发生函数调用时，编译器可以根据传入的实参自动推断数据类型。这就是类型的参数化。
 一但定义了函数模板，就可以将类型参数用于函数定义和函数声明了。说得直白一点，原来使用 int、float、char 等内置类型的地方，都可以用类型参数来代替
@@ -30,5 +33,8 @@ int main(int argc, const char * argv[]) {
     std::cout << "Hello, World!\n";
     //调用
     test1();
+
+    //当使用了namespace 导入std后, 输出输入, 就可以不用再添加std
+    cout << "Hello" << endl;
     return 0;
 }
